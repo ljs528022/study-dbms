@@ -1,0 +1,61 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-19b1ffe2886-7cc579ac0b57e372": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"configurationType": "MANUAL",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 8.0",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2",
+					"allowPublicKeyRetrieval": "TRUE",
+					"useSSL": "FALSE"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {
+		"mysql8-19b1ffe2886-7cc579ac0b57e372": {
+			"ddl": {
+				":tbl_regist": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202512161239\"><entities><data-source id=\"mysql8-19b1ffe2886-7cc579ac0b57e372\"><entity id=\"1\" name=\"tbl_regist\" fq-name=\"ddl.tbl_regist\" order=\"0\" color-bg=\"255,128,64\" x=\"35\" y=\"135\"><path name=\"ddl\"/></entity><entity id=\"2\" name=\"tbl_activities\" fq-name=\"ddl.tbl_activities\" order=\"1\" x=\"155\" y=\"20\"><path name=\"ddl\"/></entity><entity id=\"3\" name=\"tbl_children\" fq-name=\"ddl.tbl_children\" order=\"2\" x=\"337\" y=\"108\"><path name=\"ddl\"/></entity></data-source></entities><relations><relation name=\"fk_regist_activities\" fq-name=\"ddl.tbl_regist.fk_regist_activities\" type=\"fk\" pk-ref=\"2\" fk-ref=\"1\"/><relation name=\"fk_regist_children\" fq-name=\"ddl.tbl_regist.fk_regist_children\" type=\"fk\" pk-ref=\"3\" fk-ref=\"1\"/><relation name=\"fk_activities_children\" fq-name=\"ddl.tbl_activities.fk_activities_children\" type=\"fk\" pk-ref=\"3\" fk-ref=\"2\"/></relations></diagram>"
+						}
+					}
+				}
+			},
+			"sharesitedb": {
+				":d1_user": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202512151245\"><entities><data-source id=\"mysql8-19b1ffe2886-7cc579ac0b57e372\"><entity id=\"1\" name=\"d1_user\" fq-name=\"sharesitedb.d1_user\" order=\"0\" color-bg=\"255,128,64\" border-width=\"3\" x=\"506\" y=\"312\"><path name=\"sharesitedb\"/></entity><entity id=\"2\" name=\"d1_chatmessage\" fq-name=\"sharesitedb.d1_chatmessage\" order=\"1\" x=\"20\" y=\"96\"><path name=\"sharesitedb\"/></entity><entity id=\"3\" name=\"d1_chatroom\" fq-name=\"sharesitedb.d1_chatroom\" order=\"2\" x=\"177\" y=\"20\"><path name=\"sharesitedb\"/></entity><entity id=\"4\" name=\"d1_item\" fq-name=\"sharesitedb.d1_item\" order=\"3\" x=\"177\" y=\"644\"><path name=\"sharesitedb\"/></entity><entity id=\"5\" name=\"d1_like\" fq-name=\"sharesitedb.d1_like\" order=\"4\" x=\"20\" y=\"735\"><path name=\"sharesitedb\"/></entity><entity id=\"6\" name=\"d1_location\" fq-name=\"sharesitedb.d1_location\" order=\"5\" x=\"20\" y=\"858\"><path name=\"sharesitedb\"/></entity><entity id=\"7\" name=\"d1_payment\" fq-name=\"sharesitedb.d1_payment\" order=\"6\" x=\"20\" y=\"479\"><path name=\"sharesitedb\"/></entity><entity id=\"8\" name=\"d1_report\" fq-name=\"sharesitedb.d1_report\" order=\"7\" x=\"177\" y=\"242\"><path name=\"sharesitedb\"/></entity><entity id=\"9\" name=\"d1_review\" fq-name=\"sharesitedb.d1_review\" order=\"8\" x=\"177\" y=\"422\"><path name=\"sharesitedb\"/></entity></data-source></entities><relations><relation name=\"d1_chatmessage_ibfk_2\" fq-name=\"sharesitedb.d1_chatmessage.d1_chatmessage_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/><relation name=\"d1_chatmessage_ibfk_3\" fq-name=\"sharesitedb.d1_chatmessage.d1_chatmessage_ibfk_3\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/><relation name=\"d1_chatroom_ibfk_1\" fq-name=\"sharesitedb.d1_chatroom.d1_chatroom_ibfk_1\" type=\"fk\" pk-ref=\"1\" fk-ref=\"3\"/><relation name=\"d1_chatroom_ibfk_2\" fq-name=\"sharesitedb.d1_chatroom.d1_chatroom_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"3\"/><relation name=\"d1_item_ibfk_2\" fq-name=\"sharesitedb.d1_item.d1_item_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"4\"/><relation name=\"d1_like_ibfk_2\" fq-name=\"sharesitedb.d1_like.d1_like_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"5\"/><relation name=\"d1_location_ibfk_1\" fq-name=\"sharesitedb.d1_location.d1_location_ibfk_1\" type=\"fk\" pk-ref=\"1\" fk-ref=\"6\"/><relation name=\"d1_payment_ibfk_1\" fq-name=\"sharesitedb.d1_payment.d1_payment_ibfk_1\" type=\"fk\" pk-ref=\"1\" fk-ref=\"7\"/><relation name=\"d1_payment_ibfk_2\" fq-name=\"sharesitedb.d1_payment.d1_payment_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"7\"/><relation name=\"d1_report_ibfk_1\" fq-name=\"sharesitedb.d1_report.d1_report_ibfk_1\" type=\"fk\" pk-ref=\"1\" fk-ref=\"8\"/><relation name=\"d1_report_ibfk_2\" fq-name=\"sharesitedb.d1_report.d1_report_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"8\"/><relation name=\"d1_review_ibfk_1\" fq-name=\"sharesitedb.d1_review.d1_review_ibfk_1\" type=\"fk\" pk-ref=\"1\" fk-ref=\"9\"/><relation name=\"d1_review_ibfk_2\" fq-name=\"sharesitedb.d1_review.d1_review_ibfk_2\" type=\"fk\" pk-ref=\"1\" fk-ref=\"9\"/><relation name=\"d1_chatmessage_ibfk_1\" fq-name=\"sharesitedb.d1_chatmessage.d1_chatmessage_ibfk_1\" type=\"fk\" pk-ref=\"3\" fk-ref=\"2\"/><relation name=\"d1_like_ibfk_1\" fq-name=\"sharesitedb.d1_like.d1_like_ibfk_1\" type=\"fk\" pk-ref=\"4\" fk-ref=\"5\"/><relation name=\"d1_location_ibfk_2\" fq-name=\"sharesitedb.d1_location.d1_location_ibfk_2\" type=\"fk\" pk-ref=\"4\" fk-ref=\"6\"/><relation name=\"d1_payment_ibfk_3\" fq-name=\"sharesitedb.d1_payment.d1_payment_ibfk_3\" type=\"fk\" pk-ref=\"4\" fk-ref=\"7\"/></relations></diagram>"
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
